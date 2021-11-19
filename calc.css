@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(hsl(300, 58%, 46%), hsl(330, 73%, 65%));
+    background-repeat: no-repeat;
+    padding: 20px 30px;
+    height: 100vh;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#box{
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 10px;
+}
+
+#input, #output{
+    text-align: right;
+    margin: 5px 0;
+}
+
+#output{
+    font-size: 25px;
+    font-weight: lighter;
+    color: rgba(0,0,0,0.434);
+    height: 30px;
+}
+
+#input{
+    height: 55px;
+    font-size: 50px;
+    font-weight: 900;
+    padding: 0 3px;
+    overflow: hidden;
+}
+
+
+#keyboard{
+    margin-top: 20px;
+}
+
+#keyboard button{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.138);
+    margin: 10px;
+    text-align: center;
+}
+
+.rows{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#keyrow1 button:nth-child(4){
+    background-color: rgb(10, 111, 111);
+}
+
+#keyrow2 button:nth-child(4){
+    background-color: orange;
+}
+
+#keyrow3 button:nth-child(4){
+    background-color: rgb(238, 72, 155);
+}
+
+#keyrow4 button:nth-child(4){
+    background-color: rgb(19, 33, 141);
+}
+
+button#equate{
+    background-color: red;
+}
+
+
+#keyrow5 button:nth-child(1) {
+    visibility: hidden;
+}
+
+
+#keyboard button:active{
+    color: white;
+     background-color: rgba(0, 0, 0, 0.713);
+     font-size: 25px;
+}
+
